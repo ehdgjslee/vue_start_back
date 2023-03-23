@@ -4,7 +4,9 @@ spring:
     url: jdbc:mysql://localhost:3306/start_vue?serverTimezone=Asia/Seoul
     username: startvue
     password: 1234
-
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 # mybatis ?? ??
 mybatis:
   # resources/mapper/ ? ?? ?? xml ??
