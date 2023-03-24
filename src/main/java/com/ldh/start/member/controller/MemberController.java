@@ -34,7 +34,7 @@ public class MemberController {
         return memberService.selectList();
     }
     @PostMapping(value = "/find")
-    public List<MemberVo> find2(MemberVo memberVo, HttpServletRequest request) {
+    public List<MemberVo> find2(@RequestBody MemberVo memberVo, HttpServletRequest request) {
         System.out.println("post");
         System.out.println(memberService.selectList());
 
